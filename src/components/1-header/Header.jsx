@@ -18,7 +18,7 @@ const Header = () => {
   }, [theme]);
 
   return (
-    <header className="  flex">
+    <header className="flex">
       <button
         onClick={() => {
           setshowModal(true);
@@ -32,20 +32,16 @@ const Header = () => {
       <nav>
         <ul className="flex">
           <li>
-            <a href="">About</a>
+            <a href="#about">About</a>
           </li>
 
+          
           <li>
-            <a href="">Articles</a>
+            <a href="#pro">Projects</a>
           </li>
+          
           <li>
-            <a href="">Projects</a>
-          </li>
-          <li>
-            <a href="">Speaking</a>
-          </li>
-          <li>
-            <a href="">Contact</a>
+            <a href="#con">Contact</a>
           </li>
         </ul>
       </nav>

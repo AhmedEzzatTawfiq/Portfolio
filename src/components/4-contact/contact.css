@@ -63,15 +63,15 @@ section.contact-us button.submit {
     font-size: 1.05rem;
     text-transform: capitalize;
     transition: .3s;
-    margin-top: 1.8rem;
+    margin-top: 3.8rem;
     padding: .5rem 1.5rem;
     border: 1px solid rgb(63, 63, 70);
     justify-content: center;
-    opacity: .5
+    opacity: .5;
 }
 
 .light section.contact-us .submit {
-    background-color: #000
+    background-color: #000;
 }
 
 section.contact-us button.submit:hover {
@@ -83,7 +83,7 @@ section.contact-us button.submit:hover {
     translate: -3px 1px
 }
 
-section.contact-us p {
+section.contact-us p.flex {
     color: var(--title);
     font-size: 1.2rem;
     font-weight: 500;
@@ -101,6 +101,32 @@ section.contact-us p {
 @media (max-width: 1250px) {
     section.contact-us .contact-animation {
         display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    section.contact-us .animation {
+        display: none;
+    }
+    section.contact-us form {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+    }
+    section.contact-us form div.flex {
+        flex-direction: column;
+        align-items: start;
+    }
+    section.contact-us #email,
+    section.contact-us #message {
+        width: 100%;
+        margin-left: 0;
+        padding: 0.7rem 0;
+        margin-top: 1rem;
+    }
+    section.contact-us .submit {
+        width: 30%;
+        align-self: center;
     }
 }
 
@@ -127,5 +153,24 @@ section.contact-us p {
     section.contact-us .submit {
         width: 30%;
         align-self: center;
+    }
+    section.contact-us p.flex {
+        color: var(--title);
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    .done-animation {
+        translate: 0px 0px;
+        min-height: 60px;
+        min-width: 55px;
+    }
+    section.contact-us p span {
+        width: 16rem;
+    }
+}
+
+@media (max-width: 500px) {
+    section.contact-us form {
+        width: 98%;
     }
 }

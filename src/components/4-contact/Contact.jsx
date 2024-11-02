@@ -8,7 +8,7 @@ function Contact() {
   const [state, handleSubmit] = useForm("moqgebzl");
 
   return (
-    <section className="contact-us">
+    <section id="con" className="contact-us">
       <h1 className="title">
         <span className="icon-envelope"> </span>
         Contact us
@@ -51,8 +51,8 @@ function Contact() {
             <p
               className="flex"
               style={{ fontSize: "18px", marginTop: "1.7rem" }}
-            >
-              Your message has been sent successfully
+              >
+              <span>Your message has been sent successfully</span>
               <Lottie
                 className="done-animation"
                 loop={false}

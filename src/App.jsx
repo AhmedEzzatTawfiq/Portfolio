@@ -20,7 +20,7 @@ function App() {
   const [showScrollBTN, setshowScrollBTN] = useState(false);
   return (
     <div id="up" className="container">
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div></div>}>
         <Header />
         <Hero />
         <div className="divider" />

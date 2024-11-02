@@ -2,11 +2,13 @@ import Lottie from "lottie-react";
 import "./hero.css";
 import devAnimation from "../../animation/dev.json";
 import { motion } from "framer-motion";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 const Hero = () => {
 
   return (
-    <section className="hero flex">
+    <section id="about" className="hero flex">
       <div className="left-section  ">
         <div className="parent-avatar flex">
           <motion.img
@@ -34,10 +36,10 @@ const Hero = () => {
         </p>
 
         <div className="all-icons flex">
-          <div className="icon icon-twitter"></div>
-          <div className="icon icon-instagram"></div>
-          <div className="icon icon-github"></div>
-          <div className="icon icon-linkedin"></div>
+          <a href="https://wa.me/201202770788" target="blank" className="icon-watsap" ><FontAwesomeIcon icon={faWhatsapp} /></a>
+          {/* <a href="https://www.instagram.com/ahmed_ezzat_tawfiq?igsh=MTRsYmYzcDkwNmlieg==" target="blank" className="icon icon-instagram"></a> */}
+          <a href="https://github.com/AhmedEzzatTawfiq" target="blank" className="icon icon-github"></a>
+          <a href="https://www.linkedin.com/in/ahmed-ezzat-tawfiq/" target="blank" className="icon icon-linkedin"></a>
         </div>
       </div>
 

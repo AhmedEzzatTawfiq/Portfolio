@@ -34,7 +34,7 @@ section.hero .avatar {
     width: 6rem;
     border-radius: 50%;
     border: 1px solid hotpink;
-    padding: 2px;
+    padding: 1px;
     margin-right: .6rem
 }
 
@@ -62,6 +62,16 @@ section.hero .all-icons .icon:hover {
     font-size: 1.2rem;
     transition: 0.3s;
     cursor: pointer;
+    color: var(--icon-hover);
+}
+
+.icon-watsap {
+    font-size: 1.33rem;
+    color: var(--subtitle);
+}
+
+.icon-watsap:hover {
+    color: #fff;
     color: var(--icon-hover);
 }
 

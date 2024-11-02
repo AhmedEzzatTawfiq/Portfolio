@@ -12,15 +12,13 @@ const Footer = () => {
             <a href="">Projects</a>
           </li>
           <li>
-            <a href="">Speaking</a>
+            <a href="">Contact</a>
           </li>
-          <li>
-            <a href="">Uses</a>
-          </li>
+          
         </ul>
       </nav>
 
-      <p>© 2024 Ezzat • All rights reserved.</p>
+      <p>© 2024 Ahmed Ezzat • All rights reserved.</p>
     </footer>
   );
 };

@@ -23,7 +23,7 @@ const myProjects = [
     githubLink: "https://github.com/AhmedEzzatTawfiq/homyz-hotel",
   },
   {
-    projectTitle: "AET Shopping",        
+    projectTitle: "AET Shopping",
     category: ["css"],
     imgPath: "./images/6.jpg",
     description:
@@ -165,7 +165,9 @@ const Main = () => {
               key={item.imgPath}
               className="card"
             >
-              <img width={266} src={item.imgPath} alt="" loading="lazy"/>
+              <a href={item.iconLink} target="_blank" rel="noopener noreferrer">
+                <img width={266} src={item.imgPath} alt="" loading="lazy" />
+              </a>
 
               <div style={{ width: "266px" }} className="box">
                 <h1 className="title">{item.projectTitle}</h1>
@@ -174,7 +176,11 @@ const Main = () => {
                 <div className="flex icons">
                   <div style={{ gap: "11px" }} className="flex">
                     {/* <a href={item.iconLink} className="icon-link"></a> */}
-                    <a href={item.githubLink} target="blank" className="icon-github"></a>
+                    <a
+                      href={item.githubLink}
+                      target="blank"
+                      className="icon-github"
+                    ></a>
                   </div>
 
                   <a className="link flex" target="blank" href={item.iconLink}>
